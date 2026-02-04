@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Pembelajaran: Google Docs Mastery</title>
+    <style>
+        :root {
+            --google-blue: #4285F4;
+            --google-red: #EA4335;
+            --google-yellow: #FBBC05;
+            --google-green: #34A853;
+            --bg-color: #f8f9fa;
+            --text-color: #3c4043;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header {
+            border-bottom: 4px solid var(--google-blue);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        h1 { color: var(--google-blue); margin-bottom: 5px; }
+        h2 { color: var(--google-green); border-left: 5px solid var(--google-green); padding-left: 15px; margin-top: 30px; }
+        
+        .badge {
+            background: var(--google-blue);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+
+        .card {
+            background: #e8f0fe;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #dadce0;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th { background-color: #f1f3f4; }
+
+        .task-box {
+            border: 2px dashed var(--google-red);
+            padding: 25px;
+            background-color: #fff8f7;
+            border-radius: 8px;
+        }
+
+        .step-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .step-number {
+            background: var(--google-blue);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+
+        .visual-placeholder {
+            background: #eee;
+            width: 100%;
+            height: auto; /* Ubah tinggi menjadi otomatis */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #888;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-style: italic;
+            overflow: hidden; /* Sembunyikan bagian gambar yang keluar */
+        }
+        
+        .visual-placeholder img {
+            width: 100%; /* Gambar akan menyesuaikan lebar kontainer */
+            height: auto; /* Tinggi akan menyesuaikan proporsi */
+            display: block; /* Menghilangkan margin bawah default pada gambar */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #70757a;
+        }
+
+        .btn-complete {
+            background: var(--google-green);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .btn-complete:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="badge">Modul 01</span>
+        <h1>Mengenal Fungsi Google Docs</h1>
+        <p>Belajar mengolah kata secara cerdas di era Cloud.</p>
+    </header>
+
+    <section>
+        <h2>1. Apa itu Google Docs?</h2>
+        <p>Google Docs adalah aplikasi pengolah kata berbasis <strong>Cloud (Awan)</strong>. Berbeda dengan aplikasi tradisional, Google Docs memungkinkan pengguna untuk bekerja secara <strong>kolaboratif</strong> (bersama-sama) dalam satu file secara real-time.</p>
+        
+        <div class="card">
+            <strong>Keunggulan Utama:</strong>
+            <ul>
+                <li><strong>Auto-save:</strong> Tersimpan otomatis setiap kali Anda mengetik.</li>
+                <li><strong>History Versi:</strong> Melihat riwayat pengeditan dan siapa yang mengubahnya.</li>
+                <li><strong>Akses Lintas Perangkat:</strong> Buka di HP, Tablet, atau PC kapan saja.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Format File Penting</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ekstensi</th>
+                    <th>Nama Format</th>
+                    <th>Kegunaan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>.docx</strong></td>
+                    <td>Microsoft Word</td>
+                    <td>Untuk kompatibilitas dengan aplikasi offline.</td>
+                </tr>
+                <tr>
+                    <td><strong>.pdf</strong></td>
+                    <td>Portable Document</td>
+                    <td>Untuk dokumen final agar tata letak tidak berubah.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>3. Panduan Visual: Voice Typing</h2>
+        <p>Gunakan fitur ini untuk mengetik lebih cepat menggunakan suara Anda.</p>
+        
+        <div class="step-container">
+            <div class="step-number">1</div>
+            <div style="width: 100%;"> <strong>Buka Menu Tools & Aktifkan Mikrofon</strong>
+                <p>Klik menu <em>Tools</em> (Alat) lalu pilih <em>Voice Typing</em>. Kemudian, klik ikon mikrofon yang muncul untuk mulai mendikte.</p>
+                <div class="visual-placeholder">
+                    <img src="image_0.png" alt="Panduan Visual Voice Typing Google Docs">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="task-box">
+        <h2 style="color: var(--google-red); border: none; padding: 0;">📝 Tugas Mandiri</h2>
+        <p>Selesaikan langkah-langkah di bawah ini untuk menyelesaikan modul:</p>
+        <ol>
+            <li>Buat dokumen baru dengan judul: <strong>[Nama]_Latihan1</strong>.</li>
+            <li>Gunakan <strong>Voice Typing</strong> untuk menceritakan hobi Anda sebanyak 2 paragraf.</li>
+            <li>Berikan <strong>Komentar (Comment)</strong> pada kalimat pertama paragraf kedua.</li>
+            <li><strong>Download</strong> dokumen tersebut dalam format <strong>PDF</strong>.</li>
+        </ol>
+        <button class="btn-complete" onclick="alert('Luar biasa! Pastikan file PDF sudah Anda simpan.')">Tandai Selesai</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Media Pembelajaran Digital - Google Docs Series</p>
+    </footer>
+</div>
+
+</body>
+</html>
